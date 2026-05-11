@@ -8,7 +8,7 @@ Jádro všech trénovacích skriptů je sjednocené (obsahuje logování přes W
 
 ### 1. Skripty pro testování kapacity modelů
 Základní trénovací skripty, kde je klíčovým parametrem dynamicky nastavitelná velikost trénovací dávky (`batch_size`). 
-* **Důvod odlišnosti:** Při přechodu z jednoduššího datasetu FlickrLogos-32 na komplexnější QMUL-OpenLogo docházelo u větších modelů k narážení na hardwarové limity VRAM. Skripty proto umožňují flexibilně snížit `batch_size` (typicky z 16 na 8) přímo z příkazové řádky, aby nedocházelo k chybám typu *Out of Memory* (OOM).
+* **Důvod odlišnosti:** Při přechodu z jednoduššího datasetu FlickrLogos-32 na komplexnější QMUL-OpenLogo docházelo u větších modelů k narážení na hardwarové limity VRAM. Skripty proto umožňují flexibilně snížit `batch_size` (z 16 na 8) přímo z příkazové řádky, aby nedocházelo k chybám typu *Out of Memory* (OOM).
 
 ### 2. Skripty pro testování rozlišení
 Skripty navržené pro testování schopnosti modelů detekovat malá loga při zvýšeném vstupním rozlišení.
